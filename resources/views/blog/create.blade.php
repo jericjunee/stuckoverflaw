@@ -100,7 +100,7 @@
           <p class="mt-1 text-base text-gray-500 dark:text-gray-300" id="file_input_help">Only JPG, JPEG, PNG file extensions are accepted.</p>
         </div>
 
-        <button type="submit" class="w-1/5 mt-10 text-white bg-dark font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 focus:outline-none">Create post</button>
+        <button type="submit" class="w-1/5 mt-10 text-white bg-blue-700 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 focus:outline-none">Create post</button>
         
         </form>
     </section>

@@ -77,7 +77,7 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  string  $slug
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -88,22 +88,22 @@ class PostsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  string  $slug
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($slug)
+    public function edit($id)
     {
-        return view('blog.edit')->with('post', Post::where('slug', $slug)->first());
+        return view('blog.edit')->with('post', Post::where('id', $id)->first());
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  string  $slug
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $slug)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'title'=>'required',
@@ -117,7 +117,7 @@ class PostsController extends Controller
 
         $request->image->move(public_path('image'), $newImageName);
 
-        Post::where('slug', $slug)->update([
+        Post::where('id', $id)->update([
             'title' => $request->input('title'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'category' => $request->input('category'),
