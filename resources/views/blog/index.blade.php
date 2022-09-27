@@ -45,7 +45,7 @@
           <div class="flex flex-col justify-between gap-5">
             <h2 class="text-5xl">{{ $post->title }}</h2>
 
-            <span class="font-body text-light bg-primary rounded-md py-2 px-4 w-max-content text-center">{{ $post->category }}</span>
+            <span class="font-body text-light bg-primary rounded-md py-2 px-4 w-36 text-center">{{ $post->category }}</span>
 
             <div class="flex flex-row gap-5 font-body text-2xl"><span class="italic font-semibold">By: {{ $post->user->name }} </span>
 

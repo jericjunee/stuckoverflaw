@@ -1,6 +1,11 @@
 module.exports = {
-    purge: ["./resources/views/**/*.blade.php", "./resources/css/**/*.css"],
-    content: ["./node_modules/flowbite/**/*.js"],
+    content: [
+        "./node_modules/flowbite/**/*.js",
+        "./storage/framework/views/*.php",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+    ],
     theme: {
         extend: {
             colors: {
@@ -19,5 +24,5 @@ module.exports = {
         },
     },
     variants: {},
-    plugins: [require("@tailwindcss/ui"), require("flowbite/plugin")],
+    plugins: [require("flowbite/plugin")],
 };

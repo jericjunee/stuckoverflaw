@@ -1,9 +1,9 @@
-<header class="z-10 py-4 px-10 bg-white shadow-md dark:bg-gray-800">
+<header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
   <div
-    class="container flex items-center justify-between h-full px-10 mx-auto text-purple-600 dark:text-purple-300">
+    class="container flex items-center justify-between h-full mx-auto px-10 text-purple-600 dark:text-purple-300">
     <!-- Mobile hamburger -->
     <button
-      class="p-1 -ml-1 mr-5 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+      class="p-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
       aria-label="Menu"
     >
       <svg
