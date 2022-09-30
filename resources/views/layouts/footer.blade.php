@@ -1,4 +1,4 @@
-<div class="flex flex-row flex-wrap justify-around py-10 bg-dark">
+<div class="flex flex-row flex-wrap justify-around py-10 bg-dark sticky top-[100vh]">
   <div class="flex flex-col">
     <a href="{{ url('/') }}" class="text-lg font-heading font-semibold text-gray-100 no-underline flex items-center">
       <img class="w-12" src="{{ URL::asset('image/logo.png') }}" alt="StuckOverflaw" >StuckOverflaw

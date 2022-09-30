@@ -25,7 +25,8 @@ class AdminController extends Controller
         if(Gate::allows('admin-only', auth()->user())) {
             return view('roles.admin.index');
         } else {
-            abort(403);
+            if (Auth::user()->is_admin == 0) return redirect('/dashboard');
+            else abort(403);
         }
     }
 }

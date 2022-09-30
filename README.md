@@ -54,10 +54,17 @@ DB_USERNAME={USERNAME}
 DB_PASSWORD={PASSWORD}
 ```
 
-Migrate the tables
+Migrate the tables and seed the default admin account.
 
 ```
-php artisan migrate
+php artisan migrate --seed
+```
+
+The default account credentials is:
+
+```
+email: admin@stuckoverflaw.com
+password: 1234
 ```
 
 Run the project

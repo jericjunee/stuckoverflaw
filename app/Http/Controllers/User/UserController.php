@@ -25,7 +25,8 @@ class UserController extends Controller
         if(Gate::allows('user-only', auth()->user())) {
             return view('roles.user.index');
         } else {
-            abort(403);
+            if (Auth::user()->is_admin == 1) return redirect('/admin');
+            else abort(403);
         }
     }
 }
